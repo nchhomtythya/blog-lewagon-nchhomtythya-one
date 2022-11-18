@@ -2,6 +2,14 @@
 
 <h1>Articles</h1>
 
+<!-- app/views/articles/index.html.erb -->
+<%= cl_image_tag("b08ioqiwwjxfy3d8ymuq",
+      width: 400, height: 300, crop: :fill) %>
+
+<!-- for face detection -->
+<%= cl_image_tag("yqvmwku50sty9kztkxpy",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
+
 <div id="articles">
   <% @articles.each do |article| %>
     <%= render article %>
